@@ -1,1 +1,11 @@
-
+[a,x]=ecdf(s1);
+[b,y]=ecdf(s2);
+[c,z]=ecdf(s3);
+plot(x,a,'Linewidth',2);
+hold on;
+plot(y,b,'Linewidth',2);
+hold on;
+plot(z,c,'Linewidth',2);
+title('Empirical cdf');
+xlabel('x');ylabel('F(x)');
+legend('x1(len=10)','x2(len=100)','x3(len=1000)');

@@ -1,0 +1,11 @@
+f=0:0.01:1;
+R=(abs(1./(1-0.25*exp(-2*pi*f*i)))).^2;
+%R=(1./(17/16-0.5*cos(2*pi*f))).^2;
+plot(f,R);
+title('power spectrum');
+xlabel('normalized frequency');
+ylabel('power');
+% k=-100:100;
+% r=4.^(2-abs(k))/15;
+% R=fft(r);
+% plot(k,abs(R));
